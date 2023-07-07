@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumojit Shome</title>
+    <link rel="shortcut icon" href="img\mypicyellowbg.png" type="image/x-icon">
+
+
+    <!-- ============================Styles============================ -->
+    <link rel="stylesheet" href="css\mainstyle.css">
+    <link rel="stylesheet" href="css\navbarstyle.css">
+    <link rel="stylesheet" href="css\homestyle.css">
+    <link rel="stylesheet" href="css\aboutstyle.css">
+    <link rel="stylesheet" href="css\educationstyle.css">
+    <link rel="stylesheet" href="css\skillstyle.css">
+    <link rel="stylesheet" href="css\progressbarstyle.css">
+    <link rel="stylesheet" href="css\projectstyle.css">
+    <link rel="stylesheet" href="css\contactstyle.css">
+    <link rel="stylesheet" href="css\contactformstyle.css">
+    <link rel="stylesheet" href="css\footerstyle.css">
+
+
+    <!-- ============================Meta Tags============================ -->
+    <meta name="theme-color" content="#431d7a" />
+
+    <meta name="description" content="Portfolio Website">
+    <meta itemprop="image" content="https://drive.google.com/uc?export=view&id=1PFV5QvpnQDvhi2jE2l71JP-q6cctMMvs">
+
+
+    <meta property="og:url" content="https://iamsoumojit.vercel.app">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Soumojit Shome | Portfolio Website">
+    <meta property="og:image" content="https://drive.google.com/uc?export=view&id=1PFV5QvpnQDvhi2jE2l71JP-q6cctMMvs">
+    <meta property="og:site_name" content="Soumojit Shome | Portfolio Website">
+
+
+
+    <!-- <meta property="og:title" content=Soumojit Shome | Portfolio Website>
+    <meta property="og:site_name" content=Soumojit Shome | Portfolio Website>
+    <meta property="og:url" content=https://iamsoumojit.vercel.app>
+    <meta property="og:description" content=Soumojit Shome | Portfolio Website>
+    <meta property="og:type" content=website>
+    <meta property="og:image" content=https://iamsoumojit.vercel.app/img/mypicyellowbg.png> -->
+
+</head>
+
+<body>
+    <div class="bg">
+
+        <div class="container">
+
+            <!-- ==========================Header========================== -->
+            <header>
+                <nav>
+                    <section class="leftsec">
+                        <div class="mypic">
+
+                            <img src="img\mypicyellowbg.png" alt="">
+                        </div>
+                        <p>Soumojit Shome</p>
+                    </section>
+
+                    <section class="rightsec">
+                        <ul class="hamberger">
+                            <!-- <button onclick="hamtoggle()"><img id="iniham" class="hambergersvg"
+                                    src="img\hambergerpic.png" alt=""><img id="finham" src="img\crosspic.png"
+                                    alt=""></button> -->
+                            <button>
+                                <label class="hamburger">
+                                    <input type="checkbox" id="chbx" onclick="hamtoggle()">
+                                    <svg viewBox="0 0 32 32">
+                                        <path class="line line-top-bottom"
+                                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                                        </path>
+                                        <path class="line" d="M7 16 27 16"></path>
+                                    </svg>
+                                </label>
+                            </button>
+
+                        </ul>
+                        <ul id="control">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#edu">Education</a></li>
+                            <li><a href="#skill">Skill</a></li>
+                            <li><a href="#project">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+
+                    </section>
+
+                </nav>
+                <section id="mobileopen">
+                    <ul onclick="hamclose()">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#edu">Education</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                </section>
+
+            </header>
+
+
+            <main onclick="hamclose()">
+
+                <!-- ==========================Home========================== -->
+                <section id="home">
+                    <section id="homeleftsection">
+                        <div id="myhomename">
+
+                            <p>Hello,</p>
+                            <p>I'<span>m</span> Soumojit <span>Shome</span></p>
+
+                            <h1>
+                                <a href="" class="typewrite" data-period="2000"
+                                    data-type='["I Love Web Development", "I Love Design.", "I Love Programming" ]'>
+                                    <span class="wrap"></span>
+                                </a>
+                            </h1>
+                            <div class="btn">
+                            
+
+                                <a href="Resume_Soumojit_Shome.pdf" target="_blank">
+                                    <button class="button-raj" role="button">Resume</button>
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/soumojit-shome" target="_blank">
+                                    <button class="gitbtn">
+                                        <svg width="40" height="40" fill="#0092E4" xmlns="http://www.w3.org/2000/svg"
+                                            data-name="Layer 1" viewBox="0 0 24 24">
+                                            <path
+                                                d="M19.959 11.719v7.379h-4.278v-6.885c0-1.73-.619-2.91-2.167-2.91-1.182 0-1.886.796-2.195 1.565-.113.275-.142.658-.142 1.043v7.187h-4.28s.058-11.66 0-12.869h4.28v1.824l-.028.042h.028v-.042c.568-.875 1.583-2.126 3.856-2.126 2.815 0 4.926 1.84 4.926 5.792zM2.421.026C.958.026 0 .986 0 2.249c0 1.235.93 2.224 2.365 2.224h.028c1.493 0 2.42-.989 2.42-2.224C4.787.986 3.887.026 2.422.026zM.254 19.098h4.278V6.229H.254v12.869z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </a>
+
+                                <a href="https://github.com/Soumojitshome2023" target="_blank">
+                                    <button class="gitbtn">
+                                        <svg width="40" height="40" fill="#0092E4" xmlns="http://www.w3.org/2000/svg"
+                                            data-name="Layer 1" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </a>
+
+                                <a href="https://youtube.com/@soumojitshome" target="_blank">
+                                    <button class="gitbtn">
+                                        <svg width="40" height="40" fill="#0092E4" xmlns="http://www.w3.org/2000/svg"
+                                            data-name="Layer 1" viewBox="0 0 24 24">
+                                            <path
+                                                d="M23,9.71a8.5,8.5,0,0,0-.91-4.13,2.92,2.92,0,0,0-1.72-1A78.36,78.36,0,0,0,12,4.27a78.45,78.45,0,0,0-8.34.3,2.87,2.87,0,0,0-1.46.74c-.9.83-1,2.25-1.1,3.45a48.29,48.29,0,0,0,0,6.48,9.55,9.55,0,0,0,.3,2,3.14,3.14,0,0,0,.71,1.36,2.86,2.86,0,0,0,1.49.78,45.18,45.18,0,0,0,6.5.33c3.5.05,6.57,0,10.2-.28a2.88,2.88,0,0,0,1.53-.78,2.49,2.49,0,0,0,.61-1,10.58,10.58,0,0,0,.52-3.4C23,13.69,23,10.31,23,9.71ZM9.74,14.85V8.66l5.92,3.11C14,12.69,11.81,13.73,9.74,14.85Z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </a>
+                                
+                                <a href="mailto:soumojit.shome@gmail.com" target="_blank">
+                                    <button class="gitbtn">
+                                        <svg width="40" height="40" fill="#0092E4" xmlns="http://www.w3.org/2000/svg"
+                                            data-name="Layer 1" viewBox="0 0 24 24">
+                                            <path
+                                                d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </a>
+
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section id="homerightsection">
+                        <div id="myhomepic">
+                            <img src="img\mypicyellowbg.png" alt="pic">
+                        </div>
+                    </section>
+
+
+                </section>
+
+
+                <!-- ==========================About========================== -->
+                <section id="about">
+                    <section id="aboutleftsection">
+                        <div id="myaboutpic">
+                            <img src="img\mypicyellowbg.png" alt="pic">
+                        </div>
+
+                    </section>
+
+                    <section id="aboutrightsection">
+                        <div id="aboutheading">
+
+                            <p>About <span>Me</span></p>
+                        </div>
+                        <div id="aboutcontent">
+
+                            <p><span><b>Name:
+                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></span>
+                                Soumojit Shome</p>
+
+                            <p><span><b>Date of Birth: &nbsp&nbsp&nbsp&nbsp</b></span> April 18, 2004</p>
+
+                            <p><span><b>Address: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></span>
+                                Chinsurah, Hooghly, India</p>
+
+                            <p><span><b>Pin Code: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></span> 712101
+                            </p>
+
+                            <p><span><b>Email:
+                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></span>
+                                soumojit.shome@gmail.com</p>
+
+                            <p><span><b>Phone:
+                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></span>
+                                +91 9062300500</p>
+
+                                <div class="btn">
+                            
+
+                                    <a href="Resume_Soumojit_Shome.pdf" target="_blank">
+                                        <button class="button-raj" role="button">Resume</button>
+                                    </a>
+    
+                                    <a href="https://www.linkedin.com/in/soumojit-shome" target="_blank">
+                                        <button class="gitbtn">
+                                            <svg width="40" height="40" fill="#0092E4" xmlns="http://www.w3.org/2000/svg"
+                                                data-name="Layer 1" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M19.959 11.719v7.379h-4.278v-6.885c0-1.73-.619-2.91-2.167-2.91-1.182 0-1.886.796-2.195 1.565-.113.275-.142.658-.142 1.043v7.187h-4.28s.058-11.66 0-12.869h4.28v1.824l-.028.042h.028v-.042c.568-.875 1.583-2.126 3.856-2.126 2.815 0 4.926 1.84 4.926 5.792zM2.421.026C.958.026 0 .986 0 2.249c0 1.235.93 2.224 2.365 2.224h.028c1.493 0 2.42-.989 2.42-2.224C4.787.986 3.887.026 2.422.026zM.254 19.098h4.278V6.229H.254v12.869z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </a>
+    
+                                    <a href="https://github.com/Soumojitshome2023" target="_blank">
+                                        <button class="gitbtn">
+                                            <svg width="40" height="40" fill="#0092E4" xmlns="http://www.w3.org/2000/svg"
+                                                data-name="Layer 1" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </a>
+    
+                                    <a href="https://youtube.com/@soumojitshome" target="_blank">
+                                        <button class="gitbtn">
+                                            <svg width="40" height="40" fill="#0092E4" xmlns="http://www.w3.org/2000/svg"
+                                                data-name="Layer 1" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M23,9.71a8.5,8.5,0,0,0-.91-4.13,2.92,2.92,0,0,0-1.72-1A78.36,78.36,0,0,0,12,4.27a78.45,78.45,0,0,0-8.34.3,2.87,2.87,0,0,0-1.46.74c-.9.83-1,2.25-1.1,3.45a48.29,48.29,0,0,0,0,6.48,9.55,9.55,0,0,0,.3,2,3.14,3.14,0,0,0,.71,1.36,2.86,2.86,0,0,0,1.49.78,45.18,45.18,0,0,0,6.5.33c3.5.05,6.57,0,10.2-.28a2.88,2.88,0,0,0,1.53-.78,2.49,2.49,0,0,0,.61-1,10.58,10.58,0,0,0,.52-3.4C23,13.69,23,10.31,23,9.71ZM9.74,14.85V8.66l5.92,3.11C14,12.69,11.81,13.73,9.74,14.85Z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                    
+                                    <a href="mailto:soumojit.shome@gmail.com" target="_blank">
+                                        <button class="gitbtn">
+                                            <svg width="40" height="40" fill="#0092E4" xmlns="http://www.w3.org/2000/svg"
+                                                data-name="Layer 1" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </a>
+    
+    
+                                </div>
+
+                        </div>
+                    </section>
+
+                </section>
+
+
+
+                <!-- ==========================Education========================== -->
+                <section id="edu">
+                    <div id="educationheading">
+                        <p><span>My</span> Education</p>
+                    </div>
+
+                    <section id="edu_des">
+
+
+                        <!-- ==========2010-2014========== -->
+                        <section id="edu_container">
+
+                            <div class="education_details_box">
+                                <div class="hatpic">
+                                    <img src="img\graduationhat.png" alt="hat pic">
+                                </div>
+
+                                <div class="edu_year">
+                                    <p>2010 - 2013</p>
+                                </div>
+
+                                <div class="edu_sub_box_heading">
+                                    <p>Primary School</p>
+                                </div>
+
+                                <div class="edu_describtion">
+                                    <p>I completed my primary schooling from 2010 to 2013 at Chinsurah Deshbandhu
+                                        Memorial High School.</p>
+                                </div>
+                            </div>
+
+                        </section>
+
+
+                        <!-- ==========2015-20========== -->
+                        <section id="edu_container">
+
+                            <div class="education_details_box">
+                                <div class="hatpic">
+                                    <img src="img\graduationhat.png" alt="hat pic">
+                                </div>
+
+                                <div class="edu_year">
+                                    <p>2014 - 2020</p>
+                                </div>
+
+                                <div class="edu_sub_box_heading">
+                                    <p>Secondary School</p>
+                                </div>
+
+                                <div class="edu_describtion">
+                                    <p>I completed my secondary schooling from 2014 to 2020 at Chinsurah Deshbandhu
+                                        Memorial High School.</p>
+                                </div>
+                            </div>
+
+                        </section>
+
+
+                    </section>
+
+                    <section id="edu_des">
+
+
+                        <!-- ==========2020-2022========== -->
+                        <section id="edu_container">
+
+                            <div class="education_details_box">
+                                <div class="hatpic">
+                                    <img src="img\graduationhat.png" alt="hat pic">
+                                </div>
+
+                                <div class="edu_year">
+                                    <p>2020 - 2022</p>
+                                </div>
+
+                                <div class="edu_sub_box_heading">
+                                    <p>Higher Secondary School</p>
+                                </div>
+
+                                <div class="edu_describtion">
+                                    <p>I completed my higher secondary schooling from 2020 to 2022 at Chinsurah
+                                        Deshbandhu Memorial High School.</p><br>
+
+                                    <p>Test Scores :</p><br>
+                                    <p>HS : 441 out of 500 &#x2022; April 2022</p><br>
+                                    <p>WBJEE : 14766 &#x2022; April 2022</p><br>
+                                    <p>JEE Main : 88.5117057 %ile &#x2022; July 2022</p><br>
+                                    <p>JEE Advanced : 44 &#x2022; Not qualified &#x2022; August 2022</p>
+                                </div>
+                            </div>
+
+                        </section>
+
+
+                        <!-- ==========2022-2026========== -->
+                        <section id="edu_container">
+
+                            <div class="education_details_box">
+                                <div class="hatpic">
+                                    <img src="img\graduationhat.png" alt="hat pic">
+                                </div>
+
+                                <div class="edu_year">
+                                    <p>2022 - 2026</p>
+                                </div>
+
+                                <div class="edu_sub_box_heading">
+                                    <p>College</p>
+                                </div>
+
+                                <div class="edu_describtion">
+                                    <p>I'm pursuing a BTech in Electronics and Communication Engineering from the
+                                        Academy of Technology.</p>
+                                </div>
+                            </div>
+
+                        </section>
+
+
+                    </section>
+
+
+                </section>
+
+
+
+                <!-- ==========================Skill========================== -->
+                <section id="skill">
+                    <div id="skillheading">
+                        <p><span>S</span>kills</p>
+                    </div>
+                    <section id="skillbars">
+
+                        <div class="progressbar">
+                            <div class="circular-progress">
+                                <span class="progress-value">0%</span>
+                            </div>
+                            <span class="pgbartext">HTML</span>
+                        </div>
+
+                        <div class="progressbar">
+                            <div class="circular-progress">
+                                <span class="progress-value">0%</span>
+                            </div>
+                            <span class="pgbartext">CSS</span>
+                        </div>
+
+                        <div class="progressbar">
+                            <div class="circular-progress">
+                                <span class="progress-value">0%</span>
+                            </div>
+                            <span class="pgbartext">JavaScript</span>
+                        </div>
+
+                        <div class="progressbar">
+                            <div class="circular-progress">
+                                <span class="progress-value">0%</span>
+                            </div>
+                            <span class="pgbartext">C</span>
+                        </div>
+
+                        <div class="progressbar">
+                            <div class="circular-progress">
+                                <span class="progress-value">0%</span>
+                            </div>
+                            <span class="pgbartext">Cpp</span>
+                        </div>
+
+                        <div class="progressbar">
+                            <div class="circular-progress">
+                                <span class="progress-value">0%</span>
+                            </div>
+                            <span class="pgbartext">Python</span>
+                        </div>
+
+                        <div class="progressbar">
+                            <div class="circular-progress">
+                                <span class="progress-value">0%</span>
+                            </div>
+                            <span class="pgbartext">Java</span>
+                        </div>
+
+                        <div class="progressbar">
+                            <div class="circular-progress">
+                                <span class="progress-value">0%</span>
+                            </div>
+                            <span class="pgbartext">Web <br> Development</span>
+                        </div>
+
+
+
+
+                    </section>
+
+
+                </section>
+
+
+
+                <!-- ==========================Project========================== -->
+                <section id="project">
+                    <div id="projectheading">
+                        <p><span>P</span>rojects</p>
+                    </div>
+                    <section id="project_big_box">
+
+
+                        <!-- ===========Albert Einstein Tribute Page=========== -->
+                        <div class="project_sub_box">
+
+                            <div class="sub_box_project_heading">
+                                <div class="phleft">
+
+                                    <p>Albert Einstein Tribute Page</p>
+                                </div>
+                                <a href="https://oibsip-oasisinfobyte-soumojitshome.vercel.app/" target="_blank">
+                                    <div class="phright">
+                                        <p>Demo</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project_sub_box_bg">
+
+                                <img src="img\project_tributepage.png" alt="tributepage">
+                            </div>
+
+                        </div>
+
+                        <!-- ===========Simple Calculator=========== -->
+                        <div class="project_sub_box">
+
+                            <div class="sub_box_project_heading">
+                                <div class="phleft">
+
+                                    <p>Simple Calculator</p>
+                                </div>
+                                <a href="https://oibsip-calculator-soumojitshome.vercel.app/" target="_blank">
+                                    <div class="phright">
+                                        <p>Demo</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project_sub_box_bg">
+
+                                <img src="img\project_simple_calculator.png" alt="tributepage">
+                            </div>
+
+                        </div>
+
+                        <!-- ===========To-Do List=========== -->
+                        <div class="project_sub_box">
+
+                            <div class="sub_box_project_heading">
+                                <div class="phleft">
+
+                                    <p>To-Do List</p>
+                                </div>
+                                <a href="https://todo-webapp-soumojitshome.vercel.app/" target="_blank">
+                                    <div class="phright">
+                                        <p>Demo</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project_sub_box_bg">
+
+                                <img src="img\project_todolist.png" alt="tributepage">
+                            </div>
+
+                        </div>
+
+                        <!-- ===========Live Countdown=========== -->
+                        <div class="project_sub_box">
+
+                            <div class="sub_box_project_heading">
+                                <div class="phleft">
+
+                                    <p>Live Countdown</p>
+                                </div>
+                                <a href="https://live-countdown.vercel.app/" target="_blank">
+                                    <div class="phright">
+                                        <p>Demo</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project_sub_box_bg">
+
+                                <img src="img\project_livecountdown.png" alt="tributepage">
+                            </div>
+
+                        </div>
+
+                        <!-- ===========Links Page=========== -->
+                        <div class="project_sub_box">
+
+                            <div class="sub_box_project_heading">
+                                <div class="phleft">
+
+                                    <p>Links Page</p>
+                                </div>
+                                <a href="https://implinkssoumojit.vercel.app/" target="_blank">
+                                    <div class="phright">
+                                        <p>Demo</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project_sub_box_bg">
+
+                                <img src="img\project_mylinkspage.png" alt="tributepage">
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </section>
+
+                </section>
+
+
+
+                <!-- ==========================Contact========================== -->
+                <section id="contact">
+                    <div id="contactheading">
+                        <p><span>Contact </span> Me</p>
+                    </div>
+                    <section id="contactsections">
+
+                        <section id="contactleftsection">
+                            <div id="contact_left_sec_heading">
+                                <p>Contact Info</p>
+                            </div>
+                            <div id="contact_details">
+
+
+                                <div class="contactsymanddes">
+                                    <div class="contact_sub_symbol">
+                                        <img src="img\linkedinsymbol.png" alt="symbol">
+                                    </div>
+                                    <div class="contact_sub_des">
+                                        <a href="https://www.linkedin.com/in/soumojit-shome" target="_blank">
+                                            <p>linkedin.com/in/soumojit-shome</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="contactsymanddes">
+                                    <div class="contact_sub_symbol">
+                                        <img src="img\youtubesymbol.png" alt="symbol">
+                                    </div>
+                                    <div class="contact_sub_des">
+                                        <a href="https://youtube.com/@soumojitshome" target="_blank">
+                                            <p>youtube.com/@soumojitshome</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="contactsymanddes">
+                                    <div class="contact_sub_symbol">
+                                        <img src="img\messagesymbol.png" alt="symbol">
+                                    </div>
+                                    <div class="contact_sub_des">
+                                        <a href="mailto:soumojit.shome@gmail.com">
+                                            <p>soumojit.shome@gmail.com</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="contactsymanddes">
+                                    <div class="contact_sub_symbol">
+                                        <img src="img\locationsymbol.png" alt="symbol">
+                                    </div>
+                                    <div class="contact_sub_des">
+                                        <p>Chinsurah, Hooghly</p>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="btn">
+                            
+
+                                    <a href="Resume_Soumojit_Shome.pdf" target="_blank">
+                                        <button class="button-raj" role="button">Resume</button>
+                                    </a>
+    
+                                    <a href="https://www.linkedin.com/in/soumojit-shome" target="_blank">
+                                        <button class="gitbtn">
+                                            <svg width="40" height="40" fill="#0092E4" xmlns="http://www.w3.org/2000/svg"
+                                                data-name="Layer 1" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M19.959 11.719v7.379h-4.278v-6.885c0-1.73-.619-2.91-2.167-2.91-1.182 0-1.886.796-2.195 1.565-.113.275-.142.658-.142 1.043v7.187h-4.28s.058-11.66 0-12.869h4.28v1.824l-.028.042h.028v-.042c.568-.875 1.583-2.126 3.856-2.126 2.815 0 4.926 1.84 4.926 5.792zM2.421.026C.958.026 0 .986 0 2.249c0 1.235.93 2.224 2.365 2.224h.028c1.493 0 2.42-.989 2.42-2.224C4.787.986 3.887.026 2.422.026zM.254 19.098h4.278V6.229H.254v12.869z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </a>
+    
+                                    <a href="https://github.com/Soumojitshome2023" target="_blank">
+                                        <button class="gitbtn">
+                                            <svg width="40" height="40" fill="#0092E4" xmlns="http://www.w3.org/2000/svg"
+                                                data-name="Layer 1" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </a>
+    
+                                    <a href="https://youtube.com/@soumojitshome" target="_blank">
+                                        <button class="gitbtn">
+                                            <svg width="40" height="40" fill="#0092E4" xmlns="http://www.w3.org/2000/svg"
+                                                data-name="Layer 1" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M23,9.71a8.5,8.5,0,0,0-.91-4.13,2.92,2.92,0,0,0-1.72-1A78.36,78.36,0,0,0,12,4.27a78.45,78.45,0,0,0-8.34.3,2.87,2.87,0,0,0-1.46.74c-.9.83-1,2.25-1.1,3.45a48.29,48.29,0,0,0,0,6.48,9.55,9.55,0,0,0,.3,2,3.14,3.14,0,0,0,.71,1.36,2.86,2.86,0,0,0,1.49.78,45.18,45.18,0,0,0,6.5.33c3.5.05,6.57,0,10.2-.28a2.88,2.88,0,0,0,1.53-.78,2.49,2.49,0,0,0,.61-1,10.58,10.58,0,0,0,.52-3.4C23,13.69,23,10.31,23,9.71ZM9.74,14.85V8.66l5.92,3.11C14,12.69,11.81,13.73,9.74,14.85Z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                    
+                                    <a href="mailto:soumojit.shome@gmail.com" target="_blank">
+                                        <button class="gitbtn">
+                                            <svg width="40" height="40" fill="#0092E4" xmlns="http://www.w3.org/2000/svg"
+                                                data-name="Layer 1" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </a>
+    
+    
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <!-- =====================Contact Form===================== -->
+                        <section id="contactrightsection">
+
+                            <form name="submit-to-google-sheet" id="myForm">
+                                <div class="formheading">
+                                    <p>Message me</p>
+                                </div>
+
+                                <div class="inpt">
+
+                                    <input type="text" id="name" name="entry.689560283" placeholder="Name" required>
+                                    <input type="text" id="email" name="entry.205232486" placeholder="Email" required>
+                                    <input type="text" id="phone" name="entry.28035477" placeholder="Phone" required>
+                                    <textarea id="message" name="entry.1787750367" rows="6" cols="50"
+                                        placeholder="Message" required></textarea>
+
+                                    <button id="submitbtn" type="submit" value="Register" onclick="contactsubmitscr()"
+                                        disabled>Submit</button>
+                                    <span id="success"></span>
+                                </div>
+
+                            </form>
+
+                        </section>
+
+                    </section>
+
+
+                </section>
+
+
+            </main>
+
+
+            <!-- ==========================Footer========================== -->
+
+            <footer onclick="hamclose()">
+                
+                <section id="footer">
+
+                    <section class="footerlinks">
+                        <p>Link<span>s</span></p>
+
+                        <div class="footcol">
+
+                            <a href="#home">&rarr;Home</a>
+                            <a href="#about">&rarr;About</a>
+                            <a href="#edu">&rarr;Education</a>
+                            <a href="#skill">&rarr;Skill</a>
+                            <a href="#project">&rarr;Projects</a>
+                            <a href="#contact">&rarr;Contact</a>
+                        </div>
+
+                    </section>
+
+
+                    <section class="footerlinks">
+                        <p>Social <span> Media</span></p>
+
+                        <div class="footcol">
+
+                            <a href="https://www.linkedin.com/in/soumojit-shome" target="_blank">&rarr;LinkedIn</a>
+                            <a href="https://github.com/Soumojitshome2023" target="_blank">&rarr;GitHub</a>
+                            <a href="https://youtube.com/@soumojitshome" target="_blank">&rarr;YouTube</a>
+                            <a href="https://implinkssoumojit.vercel.app/" target="_blank">&rarr;Important Links</a>
+
+                        </div>
+
+                    </section>
+
+                    <section class="footerlinks">
+                        <p>Project<span>s</span></p>
+
+                        <div class="footcol">
+
+                            <a href="https://oibsip-oasisinfobyte-soumojitshome.vercel.app/"
+                                target="_blank">&rarr;Albert Einstein Tribute Page</a>
+
+                            <a href="https://oibsip-calculator-soumojitshome.vercel.app/" target="_blank">&rarr;Simple
+                                Calculator</a>
+
+                            <a href="https://todo-webapp-soumojitshome.vercel.app/" target="_blank">&rarr;To-Do List</a>
+
+                            <a href="https://live-countdown.vercel.app/" target="_blank">&rarr;Live Countdown</a>
+
+                        </div>
+
+                    </section>
+
+
+                    <section class="footerlinks">
+                        <p>PDF<span>s</span></p>
+
+                        <div class="footcol">
+
+                            <a href="Resume_Soumojit_Shome.pdf" target="_blank">&rarr;Resume</a>
+                            <a href="https://www.linkedin.com/in/soumojit-shome/details/certifications/"
+                                target="_blank">&rarr;Certificates</a>
+                            <a href="https://www.linkedin.com/in/soumojit-shome/details/projects/"
+                                target="_blank">&rarr;Projects</a>
+
+                        </div>
+
+                    </section>
+
+
+
+
+                </section>
+
+            </footer>
+
+
+
+        </div>
+    </div>
+
+</body>
+
+<!-- ============================Script Tags============================ -->
+
+<script src="script\hambergerscript.js"></script>
+<script src="script\navlinkcolor.js"></script>
+<script src="script\homescript.js"></script>
+<script src="script\progressbarscript.js"></script>
+<script src="script\contactscript.js"></script>
+
+
+<!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+
+</html>

@@ -1,0 +1,228 @@
+#home {
+    /* border: 5px solid yellow; */
+    min-height: 100vh;
+    /* height: auto; */
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 90px;
+    align-items: center;
+}
+
+#homeleftsection {
+    /* border: 5px solid rgb(0, 81, 255); */
+    /* height: 100vh; */
+    height: fit-content;
+    min-width: 50vw;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#myhomename {
+    /* border: 2px solid rgb(104, 104, 104); */
+    margin: 2vw;
+    width: auto;
+}
+
+#myhomename p {
+    font-size: calc(2.4rem + 2vw);
+    color: white;
+    font-weight: 900;
+}
+
+#myhomename p span {
+    color: rgb(218, 178, 3);
+}
+
+#myhomename h1 a {
+    text-decoration: none;
+    font-size: calc(2rem + 1.8vw);
+    color: white;
+    font-weight: 900;
+}
+
+
+#homerightsection {
+    /* border: 5px solid rgb(0, 81, 255); */
+    /* height: 100vh; */
+    height: fit-content;
+    min-width: 40vw;
+    width: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+#myhomepic {
+    /* border: 2px solid rgb(104, 104, 104); */
+    margin: 1vw;
+    width: auto;
+    /* margin-left: 3vw; */
+
+}
+
+#myhomepic img {
+    width: calc(100px + 20vw);
+    border-radius: 50%;
+    box-shadow:
+        0 0 15px 0px #bb6a00,
+        0 0 15px 0px #efff14;
+
+}
+
+
+.btn {
+    /* border: 2px solid rgb(104, 104, 104); */
+    /* margin: 5vw; */
+    /* width: auto; */
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.button-raj {
+    margin: 10px;
+    align-items: center;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: calc(1rem + 0.8vw);
+    justify-content: center;
+    line-height: 1em;
+    /* min-width: 2vw; */
+    min-width: 5vw;
+    padding: 15px 20px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.button-raj:active {
+    outline: 0;
+    background-image: linear-gradient(45deg, #ffa640, #5B42F3 50%, #00DDEB);
+
+}
+
+.button-raj:hover {
+    outline: 0;
+    background-image: linear-gradient(45deg, #AF40FF, #5B42F3 50%, #00DDEB);
+}
+
+.gitbtn {
+    margin: 5px;
+    display: grid;
+    place-items: center;
+    background: #e3edf7;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(255, 130, 47, 0.651);
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.gitbtn:hover {
+    box-shadow: 0px 0px 10px 5px rgba(255, 248, 243, 0.651);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transform: translateY(-0.5em);
+}
+
+.gitbtn svg {
+    transition: transform 0.5s;
+}
+
+.gitbtn:hover svg {
+    transform: scale(0.9);
+    fill: #333333;
+}
+
+
+
+
+@media (max-width: 600px) {
+    #home {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    #homeleftsection {
+        /* min-height: 40vh; */
+        /* height: auto; */
+        height: fit-content;
+        min-width: 40vw;
+        width: auto;
+
+    }
+
+    #myhomename {
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    #homerightsection {
+        /* min-height: 30vh; */
+        /* height: auto; */
+        height: fit-content;
+        min-width: 40vw;
+        width: auto;
+        margin-top: 12vh;
+        justify-content: center;
+
+    }
+
+
+    #myhomename p {
+        font-size: calc(2.4rem + 4vw);
+    }
+
+    #myhomename h1 a {
+
+        font-size: calc(2rem + 3vw);
+    }
+
+    .button-raj {
+
+        font-size: calc(1.5rem + 1.5vw);
+        
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .button-raj {
+
+        font-size: calc(1.5rem + 1.5vw);
+        margin: 5px ;
+        min-width: 80vw;
+    }
+   
+
+}
