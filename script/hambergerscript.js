@@ -1,7 +1,7 @@
 // let cntrl = document.getElementById("mobileopen")
 // cntrl.style.display = "block";
 function hamtoggle() {
-    console.log("Okay");
+    // console.log("Okay");
 
     let cntrl = document.getElementById("mobileopen")
     // let iniham = document.getElementById("iniham");
