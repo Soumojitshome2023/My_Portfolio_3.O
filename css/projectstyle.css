@@ -8,6 +8,13 @@
     justify-content: first baseline;
 }
 
+embed {
+    /* border: 3px solid white; */
+    height: 500px;
+    width: 100%;
+    
+}
+
 #projectheading {
     /* min-height: 20vh; */
     padding: 2vw;
