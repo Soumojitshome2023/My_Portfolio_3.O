@@ -29,3 +29,4 @@ progressvalue(30, 4);
 progressvalue(70, 5);
 progressvalue(30, 6);
 progressvalue(20, 7);
+progressvalue(10, 8);
