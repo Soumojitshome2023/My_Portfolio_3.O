@@ -30,3 +30,6 @@ progressvalue(70, 5);
 progressvalue(30, 6);
 progressvalue(20, 7);
 progressvalue(10, 8);
+progressvalue(15, 9);
+progressvalue(20, 10);
+progressvalue(20, 11);
