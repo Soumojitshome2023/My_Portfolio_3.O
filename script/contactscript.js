@@ -40,7 +40,7 @@ function contactsubmitscr() {
         document.getElementById("submitbtn").style.display = "";
         document.getElementById("submitbtn").disabled = true;
     }, 20000);
-    
+
 }
 
 
@@ -78,20 +78,21 @@ save("phone");
 function save(idv) {
 
     if (localStorage.getItem(idv) != null) {
-
         let b = document.getElementById(idv);
         b.value = localStorage.getItem(idv);
     }
 
-    setInterval(() => {
+    // setInterval(() => {
+    //     if (document.getElementById(idv).value != localStorage.getItem(idv)) {
+    //         console.log("data update");
+    //         let a = document.getElementById(idv).value;
+    //         localStorage.setItem(idv, a);
+    //     }
+    // }, 1000);
 
-        if (document.getElementById(idv).value != localStorage.getItem(idv)) {
+    document.getElementById(idv).addEventListener("input", function () {
+        let a = document.getElementById(idv).value;
+        localStorage.setItem(idv, a);
 
-            console.log("data update");
-
-            let a = document.getElementById(idv).value;
-            localStorage.setItem(idv, a);
-        }
-
-    }, 1000);
+    });
 }

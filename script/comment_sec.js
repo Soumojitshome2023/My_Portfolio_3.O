@@ -239,7 +239,7 @@ function sign_in_and_cmnt_box() {
     if (localStorage.getItem("user_name") != null && localStorage.getItem("user_photoURL") != null) {
         document.getElementById("cmnt").style.display = "block";
         document.getElementById("sing_in_btn").style.display = "none";
-        
+
     }
     else {
         document.getElementById("cmnt").style.display = "none";
@@ -260,6 +260,12 @@ function signInWithGoogle() {
             localStorage.setItem("user_name", user.email.split("@")[0]);
             localStorage.setItem("user_email", user.email);
             localStorage.setItem("user_photoURL", user.photoURL);
+
+
+            // ================ For Contact Form ================
+            localStorage.setItem("name", user.displayName);
+            localStorage.setItem("email", user.email);
+            // ==================================================
 
             sign_in_and_cmnt_box();
         })
