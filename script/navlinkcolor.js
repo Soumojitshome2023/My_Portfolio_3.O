@@ -31,3 +31,4 @@ pagecall("edu", 2);
 pagecall("skill", 3);
 pagecall("project", 4);
 pagecall("contact", 5);
+pagecall("footer", 6);
