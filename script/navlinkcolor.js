@@ -20,39 +20,37 @@
 //     );
 //   }
 
-
-// const laptopnavLinks = document.querySelectorAll("#control a");
-
-// function pagecall(id, ind) {
-
-//     // let xyz = document.getElementById(id);
-
-//     window.addEventListener("scroll", function(){
-//         // laptopnavLinks[ind+1].style.color = "yellow";
-//         if(isElementInViewport(id)){
-//             // alert("Hi")
-
-//             laptopnavLinks[ind].style.color = "yellow";
-//         }
-//         else{
-//             laptopnavLinks[ind].style.color = "";
-
-//         }
+// ======================================================
 
 
-//     });
+const laptopnavLinks = document.querySelectorAll("#control a");
 
-// }
+function pagecall(id, ind) {
 
-// pagecall("home", 0);
-// pagecall("about", 1);
-// pagecall("edu", 2);
-// pagecall("skill", 3);
-// pagecall("project", 4);
-// pagecall("contact", 5);
-// pagecall("footer", 6);
+    let xyz = document.getElementById(id);
+
+    xyz.addEventListener("mouseenter", function () {
+        laptopnavLinks[ind].style.color = "yellow";
+
+    });
+    xyz.addEventListener("mouseleave", function () {
+        laptopnavLinks[ind].style.color = "";
+
+    });
+
+}
+
+pagecall("home", 0);
+pagecall("about", 1);
+pagecall("edu", 2);
+pagecall("skill", 3);
+pagecall("project", 4);
+pagecall("contact", 5);
+pagecall("footer", 6);
 
 
+
+// ======================================================
 
 
 
