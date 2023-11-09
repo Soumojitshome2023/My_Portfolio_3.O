@@ -28,10 +28,10 @@ form.addEventListener('submit', e => {
     // Set the action URL and method dynamically
     formElement.action = "https://formspree.io/f/xwkdzoza"; 
     formElement.method = "POST"; 
+    formElement.submit();
     
     document.getElementById("message").value = "";
     // Submit the form or add additional code to handle the form submission if needed
-    formElement.submit();
 });
 
 
