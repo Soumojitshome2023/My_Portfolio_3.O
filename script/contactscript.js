@@ -1,17 +1,39 @@
 
 
-const scriptURL = 'https://docs.google.com/forms/d/e/1FAIpQLSfR84HZWQY03MCTaXVWDVryh8f4eqGuzzd5tpcKLiERdJ0R8w/formResponse'
-const form = document.forms['submit-to-google-sheet']
-const success = document.getElementById('success');
+// const scriptURL = 'https://docs.google.com/forms/d/e/1FAIpQLSfR84HZWQY03MCTaXVWDVryh8f4eqGuzzd5tpcKLiERdJ0R8w/formResponse'
+// const form = document.forms['submit-to-google-sheet']
+// const success = document.getElementById('success');
+// form.addEventListener('submit', e => {
+//     e.preventDefault()
+//     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+//         .then(response => console.log('Success!', response))
+
+
+//         .catch(error => console.error('Error!', error.message))
+
+// })
+
+const form = document.forms['contact-form']
+
+// form.addEventListener('submit', e => {
+//     e.preventDefault()
+//     document.getElementById("message").value = "";
+
+// })
+
 form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => console.log('Success!', response))
+    e.preventDefault(); 
+    const formElement = e.target;
+    
+    // Set the action URL and method dynamically
+    formElement.action = "https://formspree.io/f/xwkdzoza"; 
+    formElement.method = "POST"; 
+    
+    document.getElementById("message").value = "";
+    // Submit the form or add additional code to handle the form submission if needed
+    formElement.submit();
+});
 
-
-        .catch(error => console.error('Error!', error.message))
-
-})
 
 
 function contactsubmitscr() {
