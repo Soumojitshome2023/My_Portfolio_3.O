@@ -207,7 +207,7 @@ nav section[class="leftsec"] {
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 1240px) {
     #control {
         display: none;
         /* border: 2px solid rgb(17, 0, 255);
